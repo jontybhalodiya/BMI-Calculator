@@ -4,13 +4,16 @@ from cProfile import label
 app = tk.Tk()
 app.title("BMI Calculator")
 app.geometry("600x600")
+
+#function for calculating BMI
 def yrbmi():
     global bmi
     ht = float(box1.get())
     wt = float(box2.get())
-    bmi = round(wt / (ht * ht),2)
+    bmi = round(wt / (ht / 100)**2,2)
     finalr.config(text=f"Your BMI is: {bmi}")
-app.iconbitmap("jonty_dp_G1h_icon.ico")
+
+#app.iconbitmap("jonty_dp_G1h_icon.ico")
 label1 =tk.Label(app, text = "Enter your Height (m):",font = ("Arial", 10))
 label1.place(x=13, y=70)
 label2 =tk.Label(app, text = "Enter your Weight (Kg):",font = ("Arial", 10))

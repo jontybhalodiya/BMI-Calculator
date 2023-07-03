@@ -14,7 +14,7 @@ def yrbmi():
     finalr.config(text=f"Your BMI is: {bmi}")
 
 #app.iconbitmap("jonty_dp_G1h_icon.ico")
-label1 =tk.Label(app, text = "Enter your Height (m):",font = ("Arial", 10))
+label1 =tk.Label(app, text = "Enter your Height (cm):",font = ("Arial", 10))
 label1.place(x=13, y=70)
 label2 =tk.Label(app, text = "Enter your Weight (Kg):",font = ("Arial", 10))
 label2.place(x=10, y=130)
